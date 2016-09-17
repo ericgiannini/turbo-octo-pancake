@@ -25,13 +25,32 @@ var str = "Hello, playground"
 
 // Arrays 
 
-// Sum of Array's Elements 
+// Array ~ implicit / explicit 
 
-// number of elements
-// var n = Int(readLine()!)!
+// implicitly declared array
+let arrImp = [true, false]
+arrImp.dynamicType
 
-// read array and map the elements to integer
+// explicitly declared array
+let arrExp: Array = [false, true]
+arrExp.dynamicType
 
+// explicitly declared array with explicit element type
+
+let arrExpWithExpElement: Array = [false, true]
+arrExpWithExpElement.dynamicType
+
+// 2D Array with imp
+var arr2DWithImpElement = Array(count:2, repeatedValue:
+    Array(count:10, repeatedValue:true))
+print(arr2DWithImpElement)
+
+// 2D Array with exp
+var arr2DWithExpElement = Array(count:2, repeatedValue:
+    Array(count:10, repeatedValue:Bool(true)))
+print(arr2DWithExpElement)
+
+// Array with elements comma seperated
 let coffees = [ "Cappuccino", "Latte", "Macchiato" ]
 var commaSeparatedCoffees = ""
 var index = 0
