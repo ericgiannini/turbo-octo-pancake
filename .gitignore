@@ -4,6 +4,7 @@
 build/
 DerivedData/
 playground.xcworkspace 
+timeline.xctimeline
 
 ## Various settings
 *.pbxuser
