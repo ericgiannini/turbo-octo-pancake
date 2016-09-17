@@ -7,6 +7,10 @@ var str = "Hello, playground"
 
 // variables vs. constants
 
+// Why are semicolons useful?
+
+var 🐱 = 5; print(🐱); print(🐱); print(🐱); print(🐱);
+
 // sequence, control, or repetition structures
 
 // Boolean algebra
@@ -23,7 +27,13 @@ var str = "Hello, playground"
 
 // Nil coalescence operator
 
-// Arrays 
+// Arrays ~ What is an Array? 
+
+/*: 
+ 
+### An array is an ordered collection class that stores multiple values of the same type. That means that an array of Int can only store Int values. And you can only insert Int values in it.
+ */
+ 
 
 // Array ~ implicit / explicit 
 
