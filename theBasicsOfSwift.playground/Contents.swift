@@ -25,6 +25,90 @@ var str = "Hello, playground"
 
 // Arrays 
 
+// Sum of Array's Elements 
+
+// number of elements
+// var n = Int(readLine()!)!
+
+// read array and map the elements to integer
+
+let coffees = [ "Cappuccino", "Latte", "Macchiato" ]
+var commaSeparatedCoffees = ""
+var index = 0
+
+for coffee in coffees {
+    commaSeparatedCoffees += coffee
+    if index != coffees.count - 1 {
+        commaSeparatedCoffees += ", "
+    }
+    
+    index += 1
+}
+
+// Output: Cappucino, Latte, Macchiato
+
+let commaSeparatedCoffes = coffees.enumerate().reduce("") {
+    (wholeString: String, indexAndObj: (Int, String)) -> String in
+    let maybeComma = (indexAndObj.0 == coffees.count - 1) ? "" : ", "
+    return "\(wholeString)\(indexAndObj.1)\(maybeComma)"
+}
+
+// Output: Cappucino, Latte, Macchiato
+
+// reduce for adding a list of numbers 
+
+let numbers = [Int](0..<10)
+let totalOfNumbers = numbers.reduce(0) {
+    return $0 + $1
+}
+
+let numbersSuccinctly = [Int](0..<10)
+let totalOfNumbersSuccinctly = numbers.reduce(0, combine: +)
+
+// Output: 45
+
+
+var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+let totalOfArrayElements = arr.reduce(0) {
+    return $0 + $1
+}
+print(totalOfArrayElements)
+
+var arrSuccinctly = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+let totalOfArrayElementsSuccinctly = arr.reduce(0) {
+    return $0 + $1
+}
+print(totalOfArrayElementsSuccinctly)
+
+// variable to hold the sum of the array elements
+var sum = 0
+
+for element in arr {
+    // sum the array elements
+    sum = arr.reduce(0, combine: +)
+    // Swift's Array's reduce method (documentation here), which allows you to "reduce a collection of elements down to a single value by recursively applying the provided closure".
+}
+
+// print the array elements
+print(sum)
+
+
+// three dimension arrays 
+
+let arrayOfArrays = [
+    [ 0, 1, 2 ],
+    [ 3, 4, 5 ],
+    [ 6, 7, 8 ]
+]
+
+let flattened: [Int] = arrayOfArrays.reduce([]) {
+    res, ca in
+    return res + ca
+}
+
+// Output:
+//  flattened = [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+
 // access 
 
 // equality
