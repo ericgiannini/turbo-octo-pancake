@@ -28,9 +28,9 @@ let thisImplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe = "an em
 thisImplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe.dynamicType
 
 let thisExplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe: String = "an empty platitude"
-// explicit 
+// explicit
 
-// Although I am free to assign whichever value I so please to mutable variables, I am not w.r.t. immutable constants. 
+// Although I am free to assign whichever value I so please to mutable variables, I am not w.r.t. immutable constants.
 
 myImplicitlyDeclaredString = "may be anything I want"
 myExplicitlyDeclaredString = "may be anything I want"
@@ -66,17 +66,17 @@ print("My name is \(firstName) and the number of flowers I want on my birthday a
 
 // Nil coalescence operator
 
-// Arrays ~ What is an Array? 
+// Arrays ~ What is an Array?
 
-/*: 
- 
+/*:
+
 ### An array is an ordered collection class that stores multiple values of the same type. That means that an array of Int can only store Int values. And you can only insert Int values in it.
  */
 
 
- 
 
-// Array ~ implicit / explicit 
+
+// Array ~ implicit / explicit
 
 // implicitly declared array
 let arrImp = [true, false]
@@ -95,7 +95,7 @@ var personel = ("Fidel", "1")
 
 var collectionClass: Array = [person, personel]
 
-// If you convert the string value 1 to Int, the Array throws an error. 
+// If you convert the string value 1 to Int, the Array throws an error.
 
 // explicitly declared array with explicit element type
 
@@ -122,7 +122,7 @@ for coffee in coffees {
     if index != coffees.count - 1 {
         commaSeparatedCoffees += ", "
     }
-    
+
     index += 1
 }
 
@@ -136,7 +136,7 @@ let commaSeparatedCoffes = coffees.enumerate().reduce("") {
 
 // Output: Cappucino, Latte, Macchiato
 
-// reduce for adding a list of numbers 
+// reduce for adding a list of numbers
 
 let numbers = [Int](0..<10)
 let totalOfNumbers = numbers.reduce(0) {
@@ -174,7 +174,7 @@ for element in arr {
 print(sum)
 
 
-// three dimension arrays 
+// three dimension arrays
 
 let arrayOfArrays = [
     [ 0, 1, 2 ],
@@ -190,53 +190,85 @@ let flattened: [Int] = arrayOfArrays.reduce([]) {
 // Output:
 //  flattened = [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
 
-// access 
+// access
 
 // equality
 
-// Dictionaries 
+// Dictionaries
 
 // access
 
-// modifications 
+// modifications
 
-// dictionaries of arrays, arrays of dictionaries 
+// dictionaries of arrays, arrays of dictionaries
 
-// sets 
+// sets
 
 // sequence, control, or repetition structures
 
-// functions 
+// functions
 
-// parameters, parameter names, arguments 
+// parameters, parameter names, arguments
 
 // variadic parameters
 
-// default parameter values 
+// default parameter values
 
-// nesting functions 
+// nesting functions
 
 // closures
 
-// value types vs. reference types, pass by value & pass by references, review in advance of structs vs. classes 
+// value types vs. reference types, pass by value & pass by references, review in advance of structs vs. classes
 
 // review
 
 // end of day one
 
-// structs vs. classes 
+// structs vs. classes
 
-// structs 
-    
+// structs
+
 // instantiation
 
-// structs' instance methods & mutating methods 
+// structs' instance methods & mutating methods
 
 // properties
 
-// classes 
+// classes
+class Person {}; let eric = Person() // Eric is an occurrence of a Person
 
-// syntax, types, 
+class Bug {}; let spider = Bug() // Spider is an occurrence of a Bug
+
+class Class {}; let iOS = Class() // iOS is an occurrence of a Class
+
+class Candy{}; let chocolate = Candy() // Chocolate is an occurrence of Candy
+
+class MyList: UITableViewController {}
+
+// Mobile Phone Class
+class MobilePhone {
+
+    // Properties
+    var color: String
+    var number = 0
+    var type: String
+
+    // Initializers
+    init(c: String, n: Int, t: String) {
+        self.color = c
+        self.number = n
+        self.type = t
+    }
+
+    // Methods
+    func callNumber(number: Int, name: String) -> String {
+        return("Calling \(name) at \(number)")
+    }
+}; let phone1 = MobilePhone(c: "red", n: 9163231425, t: "iPhone")
+
+phone1.dynamicType
+
+// syntax, types,
 
 // 	instantiation
 
@@ -244,38 +276,38 @@ let flattened: [Int] = arrayOfArrays.reduce([]) {
 
 // properties
 
-// stored properties 
+// stored properties
 
-// nested types 
+// nested types
 
-// lazy properties 
+// lazy properties
 
-// computed properties : getter & setter 
+// computed properties : getter & setter
 
-// property observers 
+// property observers
 
-// access 
+// access
 
-// initialization 
+// initialization
 
-// struct initializations 
+// struct initializations
 
-// class initializzations 
+// class initializzations
 
-// error handling 
+// error handling
 
-// protocols 
+// protocols
 
-// extensions 
+// extensions
 
-// generics 
+// generics
 
-// protocol extensions 
+// protocol extensions
 
-// memory management 
+// memory management
 
-// equatable & comparable 
+// equatable & comparable
 
 // review
 
-// end of day two 
+// end of day two
