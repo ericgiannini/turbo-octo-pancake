@@ -6,6 +6,32 @@ var str = "Hello, playground"
 
 
 // variables vs. constants & types
+// strings
+    var string_1 = "String 1"
+    var string_2 = "String 2"
+
+    print(string_1); print(string_2)
+
+    var a = "var a contains the following message.."
+    var b = "var b contains a slightly different message.."
+
+    print (a); print (b)
+
+    var a = "variables are MUTABLE"
+    var b = "I have changed both var a & var b"
+
+    print (a); print (b)
+
+    let const_string1 = "I am the Alpha"
+    let const_string2 = "I am the Omega"
+
+    print (const_string1); print (const_string2)
+
+    let const_string1 = "constants (let) are IMMUTABLE"
+
+    /* Immutable means that they CANNOT be changed.
+       Mutable means that they CAN be changed. */
+
 
 // declaration of type String
 // mutable ^ var declares a mutable variable
@@ -43,8 +69,6 @@ myExplicitlyDeclaredString = "may be anything I want"
 var 🐱 = 5; print(🐱); print(🐱); print(🐱); print(🐱);
 
 // arithmetic & Boolean algebra
-
-// strings
 
 // string interpolation
 
