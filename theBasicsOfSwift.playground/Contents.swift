@@ -5,7 +5,38 @@ import UIKit
 var str = "Hello, playground"
 
 
-// variables vs. constants
+// variables vs. constants & types
+
+// declaration of type String
+// mutable ^ var declares a mutable variable
+// implicit vs. explicit
+
+var myImplicitlyDeclaredString = "I ♡ Swift!"
+// implicit
+
+myImplicitlyDeclaredString.dynamicType
+
+var myExplicitlyDeclaredString: String = "I ♡ Swift!"
+// explicit
+
+// declaration of type String
+// immutable ^ let declares an immutable variable
+// implicit vs. explicit
+
+let thisImplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe = "an empty platitude"
+// implicit
+thisImplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe.dynamicType
+
+let thisExplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe: String = "an empty platitude"
+// explicit 
+
+// Although I am free to assign whichever value I so please to mutable variables, I am not w.r.t. immutable constants. 
+
+myImplicitlyDeclaredString = "may be anything I want"
+myExplicitlyDeclaredString = "may be anything I want"
+
+// 
+
 
 // Why are semicolons useful?
 
