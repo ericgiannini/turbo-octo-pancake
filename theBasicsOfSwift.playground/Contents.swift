@@ -35,7 +35,7 @@ let thisExplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe: String 
 myImplicitlyDeclaredString = "may be anything I want"
 myExplicitlyDeclaredString = "may be anything I want"
 
-// 
+//
 
 
 // Why are semicolons useful?
@@ -45,6 +45,16 @@ var 🐱 = 5; print(🐱); print(🐱); print(🐱); print(🐱);
 // arithmetic & Boolean algebra
 
 // strings
+
+// string interpolation
+
+let firstName = "Eric"
+print(firstName)
+
+let numberOfFlowersOnBirthday = 3
+print(numberOfFlowersOnBirthday)
+
+print("My name is \(firstName) and the number of flowers I want on my birthday are \(numberOfFlowersOnBirthday)")
 
 // optionals
 
@@ -62,6 +72,8 @@ var 🐱 = 5; print(🐱); print(🐱); print(🐱); print(🐱);
  
 ### An array is an ordered collection class that stores multiple values of the same type. That means that an array of Int can only store Int values. And you can only insert Int values in it.
  */
+
+
  
 
 // Array ~ implicit / explicit 
@@ -73,6 +85,17 @@ arrImp.dynamicType
 // explicitly declared array
 let arrExp: Array = [false, true]
 arrExp.dynamicType
+
+
+// Tuples & Arrays of Tupes
+var person = ("Fidel", "Marcella")
+person.dynamicType
+
+var personel = ("Fidel", "1")
+
+var collectionClass: Array = [person, personel]
+
+// If you convert the string value 1 to Int, the Array throws an error. 
 
 // explicitly declared array with explicit element type
 
