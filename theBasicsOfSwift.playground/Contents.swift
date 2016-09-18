@@ -5,7 +5,6 @@ import UIKit
 var str = "Hello, playground"
 
 
-// variables vs. constants & types
 // strings
     var string_1 = "String 1"
     var string_2 = "String 2"
@@ -96,9 +95,6 @@ print("My name is \(firstName) and the number of flowers I want on my birthday a
 
 ### An array is an ordered collection class that stores multiple values of the same type. That means that an array of Int can only store Int values. And you can only insert Int values in it.
  */
-
-
-
 
 // Array ~ implicit / explicit
 
