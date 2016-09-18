@@ -11,9 +11,7 @@ var str = "Hello, playground"
 
 var 🐱 = 5; print(🐱); print(🐱); print(🐱); print(🐱);
 
-// sequence, control, or repetition structures
-
-// Boolean algebra
+// arithmetic & Boolean algebra
 
 // strings
 
@@ -151,6 +149,8 @@ let flattened: [Int] = arrayOfArrays.reduce([]) {
 // dictionaries of arrays, arrays of dictionaries 
 
 // sets 
+
+// sequence, control, or repetition structures
 
 // functions 
 
