@@ -70,7 +70,7 @@ print("My name is \(firstName) and the number of flowers I want on my birthday a
 
 /*: 
  
-### An array is an ordered collection class that stores multiple values of the same type. That means that an array of Int can only store Int values. And you can only insert Int values in it.
+### An array is an ordered collection class that stores multiple values of the same type (i.e., an array of Int stores Int values).
  */
 
 
@@ -95,7 +95,7 @@ var personel = ("Fidel", "1")
 
 var collectionClass: Array = [person, personel]
 
-// If you convert the string value 1 to Int, the Array throws an error. 
+// If you convert the string value 1 to Int, the Array throws an error.
 
 // explicitly declared array with explicit element type
 
@@ -202,9 +202,31 @@ let flattened: [Int] = arrayOfArrays.reduce([]) {
 
 // dictionaries of arrays, arrays of dictionaries 
 
+// insert link to picture comparing arrays to dictionaries
+
 // sets 
 
 // sequence, control, or repetition structures
+
+/*: 
+
+ A structure is a logically designed control over the order of execution in a set of executionable lines of code. In the 1960s Mathematicians proved that there are three: decision, control, repetition. Sequence is trivial. Control or, decision, is complex with multiple different substructures, one of which is "a single alternate". A single alternate decision structure in Swift is ```if```.
+ 
+*/
+
+var didTheRoosterCockADoodleDoThisMorning: String? = "yes"
+
+if didTheRoosterCockADoodleDoThisMorning != "no" {
+    print("What do not know what he did but certainly the answer was not no!")
+}
+
+// We can modify the single alternate structure to a dual alternate decision structure by adding ```else```.
+
+if didTheRoosterCockADoodleDoThisMorning != "no" {
+    print("What do not know what he did but certainly the answer was not no!")
+} else {
+    print("He did not! ")
+}
 
 // functions 
 
