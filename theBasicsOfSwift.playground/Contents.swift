@@ -35,14 +35,60 @@ let thisExplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe: String 
 myImplicitlyDeclaredString = "may be anything I want"
 myExplicitlyDeclaredString = "may be anything I want"
 
-//
-
-
 // Why are semicolons useful?
 
 var 🐱 = 5; print(🐱); print(🐱); print(🐱); print(🐱);
 
 // arithmetic & Boolean algebra
+
+
+var a : Int = 10
+var b : Int = 15
+var c : Int = 15
+
+
+print(a + b + c)
+
+print(a * b * c)
+
+print(a / b / c)
+
+print(a - b - c)
+
+
+var positive: Bool = true
+var negative: Bool = false
+
+// conjuction operator ~ the operation is true iff the operands are true
+
+print(positive && positive)
+print(negative && negative)
+print(negative && positive)
+print(positive && negative)
+
+
+// disjunction operator ~ the operation is true iff an operand is true. 
+
+print(positive || positive)
+print(negative || negative)
+print(negative || positive)
+print(positive || negative)
+
+// negation ~ the operation is true iff the result is false
+
+print(!positive)
+print(!negative)
+
+print(!(positive && positive))
+print(!(negative && negative))
+print(!(negative && positive))
+print(!(positive && negative))
+
+print(!(positive || positive))
+print(!(negative || negative))
+print(!(negative || positive))
+print(!(positive || negative))
+
 
 // strings
 
@@ -217,13 +263,13 @@ let flattened: [Int] = arrayOfArrays.reduce([]) {
 var didTheRoosterCockADoodleDoThisMorning: String? = "yes"
 
 if didTheRoosterCockADoodleDoThisMorning != "no" {
-    print("What do not know what he did but certainly the answer was not no!")
+    print("We do not know what he did but certainly the answer was not no!")
 }
 
 // We can modify the single alternate structure to a dual alternate decision structure by adding ```else```.
 
 if didTheRoosterCockADoodleDoThisMorning != "no" {
-    print("What do not know what he did but certainly the answer was not no!")
+    print("We do not know what he did but certainly the answer was not no!")
 } else {
     print("He did not! ")
 }
