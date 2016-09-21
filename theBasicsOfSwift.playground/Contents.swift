@@ -39,7 +39,7 @@ myExplicitlyDeclaredString = "may be anything I want"
 
 var 🐱 = 5; print(🐱); print(🐱); print(🐱); print(🐱);
 
-// arithmetic & Boolean algebra
+// arithmetic & logical operators
 
 
 var a : Int = 10
@@ -59,7 +59,7 @@ print(a - b - c)
 var positive: Bool = true
 var negative: Bool = false
 
-// conjuction operator ~ the operation is true iff the operands are true
+// conjuctive operator ~ the operation is true iff the operands are true
 
 print(positive && positive)
 print(negative && negative)
@@ -67,7 +67,7 @@ print(negative && positive)
 print(positive && negative)
 
 
-// disjunction operator ~ the operation is true iff an operand is true. 
+// disjunctive operator ~ the operation is true iff an operand is true.
 
 print(positive || positive)
 print(negative || negative)
