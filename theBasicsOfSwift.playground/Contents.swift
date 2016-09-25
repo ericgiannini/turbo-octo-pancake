@@ -133,6 +133,10 @@ let arrExp: Array = [false, true]
 arrExp.dynamicType
 
 
+
+
+
+
 // Tuples & Arrays of Tupes
 var person = ("Fidel", "Marcella")
 person.dynamicType
@@ -241,6 +245,19 @@ let flattened: [Int] = arrayOfArrays.reduce([]) {
 // equality
 
 // Dictionaries 
+
+
+// for - in loop with Dictionaries
+
+
+let numberOfKnights = ["Stark": 1, "Lanister": 2, "Dothraki": 0]
+for (houseName, knightCount) in numberOfKnights {
+    print("\(houseName)s have \(knightCount) knights")
+}
+//Starks have 1 knights
+//Lanisters have 2 knights
+//Dothrakis have 0 knights
+
 
 // access
 
