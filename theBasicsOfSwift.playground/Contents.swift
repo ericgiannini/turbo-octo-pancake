@@ -14,7 +14,7 @@ var str = "Hello, playground"
 var myImplicitlyDeclaredString = "I ♡ Swift!"
 // implicit
 
-myImplicitlyDeclaredString.dynamicType
+type(of: myImplicitlyDeclaredString)
 
 var myExplicitlyDeclaredString: String = "I ♡ Swift!"
 // explicit
@@ -25,7 +25,7 @@ var myExplicitlyDeclaredString: String = "I ♡ Swift!"
 
 let thisImplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe = "an empty platitude"
 // implicit
-thisImplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe.dynamicType
+type(of: thisImplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe)
 
 let thisExplicitlyDeclaredAndUnwaveringCommitmentToCivicVirtueForeverBe: String = "an empty platitude"
 // explicit 
@@ -143,11 +143,11 @@ print("My name is \(firstName) and the number of flowers I want on my birthday a
 
 // implicitly declared array
 let arrImp = [true, false]
-arrImp.dynamicType
+type(of: arrImp)
 
 // explicitly declared array
 let arrExp: Array = [false, true]
-arrExp.dynamicType
+type(of: arrExp)
 
 
 
@@ -156,7 +156,7 @@ arrExp.dynamicType
 
 // Tuples & Arrays of Tupes
 var person = ("Fidel", "Marcella")
-person.dynamicType
+type(of: person)
 
 var personel = ("Fidel", "1")
 
@@ -167,7 +167,7 @@ var collectionClass: Array = [person, personel]
 // explicitly declared array with explicit element type
 
 let arrExpWithExpElement: Array = [false, true]
-arrExpWithExpElement.dynamicType
+type(of: arrExpWithExpElement)
 
 // 2D Array with imp
 var arr2DWithImpElement = Array(count:2, repeatedValue:
