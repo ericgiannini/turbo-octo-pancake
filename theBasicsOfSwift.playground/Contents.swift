@@ -195,7 +195,7 @@ for coffee in coffees {
 
 // Output: Cappucino, Latte, Macchiato
 
-let commaSeparatedCoffes = coffees.enumerate().reduce("") {
+let commaSeparatedCoffes = coffees.enumerated().reduce("") {
     (wholeString: String, indexAndObj: (Int, String)) -> String in
     let maybeComma = (indexAndObj.0 == coffees.count - 1) ? "" : ", "
     return "\(wholeString)\(indexAndObj.1)\(maybeComma)"
