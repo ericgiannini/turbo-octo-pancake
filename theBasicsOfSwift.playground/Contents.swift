@@ -170,13 +170,13 @@ let arrExpWithExpElement: Array = [false, true]
 type(of: arrExpWithExpElement)
 
 // 2D Array with imp
-var arr2DWithImpElement = Array(count:2, repeatedValue:
-    Array(count:10, repeatedValue:true))
+var arr2DWithImpElement = Array(repeating:
+    Array(repeating:true, count:10), count:2)
 print(arr2DWithImpElement)
 
 // 2D Array with exp
-var arr2DWithExpElement = Array(count:2, repeatedValue:
-    Array(count:10, repeatedValue:Bool(true)))
+var arr2DWithExpElement = Array(repeating:
+    Array(repeating:Bool(true), count:10), count:2)
 print(arr2DWithExpElement)
 
 // Array with elements comma seperated
