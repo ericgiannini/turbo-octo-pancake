@@ -415,17 +415,17 @@ if didTheRoosterCockADoodleDoThisMorning != "no" {
 
 // n! =
 
-func factorial(N: Int) -> Int {
+func factorial(n: Int) -> Int {
     
-    if N == 0 || N == 1 {
+    if n == 0 || n == 1 {
         return 1
     } else {
-        return N * factorial(N - 1)
+        return n * factorial(n: n - 1)
     }
 }
 
-factorial(10)
-factorial(0)
+factorial(n: 10)
+factorial(n: 0)
 
 
 var counter = 5
