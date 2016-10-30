@@ -211,7 +211,7 @@ let totalOfNumbers = numbers.reduce(0) {
 }
 
 let numbersSuccinctly = [Int](0..<10)
-let totalOfNumbersSuccinctly = numbers.reduce(0, combine: +)
+let totalOfNumbersSuccinctly = numbers.reduce(0, +)
 
 // Output: 45
 
@@ -233,7 +233,7 @@ var sum = 0
 
 for element in arr {
     // sum the array elements
-    sum = arr.reduce(0, combine: +)
+    sum = arr.reduce(0, +)
     // Swift's Array's reduce method (documentation here), which allows you to "reduce a collection of elements down to a single value by recursively applying the provided closure".
 }
 
