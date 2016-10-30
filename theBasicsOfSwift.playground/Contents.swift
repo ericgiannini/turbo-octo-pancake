@@ -37,7 +37,9 @@ myExplicitlyDeclaredString = "may be anything I want"
 
 // Why are semicolons useful?
 
+
 var 🐱 = 5; print(🐱); print(🐱); print(🐱); print(🐱);
+
 
 // arithmetic & logical operators
 
@@ -55,6 +57,7 @@ print(a / b / c)
 
 print(a - b - c)
 
+// All programming languages operate with expressions evaluated as either true or false. These expressions are called Boolean expressions in honor of the English mathematician George Boole, who invented a system of mathematics for the abstract concepts of true or false for computations in the 1800s.
 
 var positive: Bool = true
 var negative: Bool = false
@@ -89,8 +92,22 @@ print(!(negative || negative))
 print(!(negative || positive))
 print(!(positive || negative))
 
+// relational operators
+
+// multiple alternate decision structure
+
 
 // strings
+
+// comparing strings 
+
+if "a" > "b" {
+    print("a is greater than b")
+} else {
+    print("b is greater than a")
+}
+
+
 
 // string interpolation
 
@@ -247,17 +264,6 @@ let flattened: [Int] = arrayOfArrays.reduce([]) {
 // Dictionaries 
 
 
-// for - in loop with Dictionaries
-
-
-let numberOfKnights = ["Stark": 1, "Lanister": 2, "Dothraki": 0]
-for (houseName, knightCount) in numberOfKnights {
-    print("\(houseName)s have \(knightCount) knights")
-}
-//Starks have 1 knights
-//Lanisters have 2 knights
-//Dothrakis have 0 knights
-
 
 // access
 
@@ -266,6 +272,16 @@ for (houseName, knightCount) in numberOfKnights {
 // dictionaries of arrays, arrays of dictionaries 
 
 // insert link to picture comparing arrays to dictionaries
+
+// for - in loop with Dictionaries
+
+let numberOfKnights = ["Stark": 1, "Lanister": 2, "Dothraki": 0]
+for (houseName, knightCount) in numberOfKnights {
+    print("\(houseName)s have \(knightCount) knights")
+}
+//Starks have 1 knights
+//Lanisters have 2 knights
+//Dothrakis have 0 knights
 
 // sets 
 
@@ -277,19 +293,41 @@ for (houseName, knightCount) in numberOfKnights {
  
 */
 
+var salary = 137000
+var taxReturns = 1
+var notEnoughTaxReturns = "You must have two years tax returns."
+var qualified = "You qualify for a loan!"
+var notQualified = "You do not qualify!"
+var salaryBelow = "You must earn more than $30,000"
+
+if salary >= 30000  {
+    if taxReturns >= 2 {
+        print(qualified)
+    } else {
+        print(notEnoughTaxReturns)
+    }
+} else {
+    print("Here is what we have to say: \(notQualified) and \(salaryBelow)")
+}
+
+// Decision structures are often called conditional-statements; repitition structures are often called iteration primitives.
+
+
 var didTheRoosterCockADoodleDoThisMorning: String? = "yes"
 
 if didTheRoosterCockADoodleDoThisMorning != "no" {
     print("We do not know what he did but certainly the answer was not no!")
 }
 
-// We can modify the single alternate structure to a dual alternate decision structure by adding ```else```.
+// We can modify the single alternate decision structure to a dual alternate decision structure by adding ```else```.
 
 if didTheRoosterCockADoodleDoThisMorning != "no" {
     print("We do not know what he did but certainly the answer was not no!")
 } else {
     print("He did not! ")
 }
+
+// multiple alternate decision structure
 
 // functions 
 
@@ -364,3 +402,42 @@ if didTheRoosterCockADoodleDoThisMorning != "no" {
 // review
 
 // end of day two 
+
+// beginning of day three 
+
+// sorting algorithms
+
+// recursive algorithms
+
+
+// factorials
+
+
+// n! =
+
+func factorial(N: Int) -> Int {
+    
+    if N == 0 || N == 1 {
+        return 1
+    } else {
+        return N * factorial(N - 1)
+    }
+}
+
+factorial(10)
+factorial(0)
+
+
+var counter = 5
+var factorial = 1
+
+repeat {
+    
+    factorial *= counter
+    counter -= 1
+    
+} while counter > 0
+
+print(factorial)
+
+
