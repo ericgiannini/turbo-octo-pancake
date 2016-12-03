@@ -441,3 +441,140 @@ repeat {
 print(factorial)
 
 
+
+func largestElement(arr: [Int], k: Int) -> Int? {
+    
+    let length = arr.count
+    
+    if k > 0 && k <= length {
+        
+        let sorted = arr.sorted()
+        
+        return sorted[length - k]
+        
+    } else {
+        return nil
+    }
+    
+}
+
+
+var arrayOfIntegers = [1, 6, 3, 9, 13, 15]
+largestElement(arr: arrayOfIntegers, k: 5)
+
+
+extension Array where Element: Comparable {
+    func kSmallest(_ k: Int) -> Element {
+        precondition(1 <= k && k <= count, "k must be in the range 1...count")
+        
+        var elements = self
+        var low = startIndex
+        var high = endIndex
+        
+        while high - low > 1 {
+            // Select random pivot element:
+            var pivotIndex = low + Int(arc4random_uniform(UInt32(high - low)))
+            let pivotElement = elements[pivotIndex]
+            // Partition the slice from low..<high:
+            pivotIndex = elements[low..<high].partition(by: { $0 >= pivotElement })
+            // Now all elements[low..<pivotIndex] are < pivotElement, and
+            // all elements[pivotIndex..<high] are >= pivotElement.
+            if k <= pivotIndex {
+                // k-smallest element is in the first partition:
+                high = pivotIndex
+            } else if k == pivotIndex + 1 {
+                // pivot element is the k-smallest element:
+                return pivotElement
+            } else {
+                // k-smallest element is in the second partition,
+                // (but not the pivot element):
+                low = elements[pivotIndex] == pivotElement ? pivotIndex + 1 : pivotIndex
+            }
+        }
+        // Only single candidate left:
+        return elements[low]
+    }
+    
+    func kLargest(_ k: Int) -> Element {
+        return kSmallest(count + 1 - k)
+    }
+}
+
+let alpha: Array = [2, 2, 3, 3, 1, 1, 4, 4]
+for i in  1...alpha.count {
+    let l = alpha.kLargest(i)
+    print(l)
+}
+
+func power(firstArg a: Int, secondArg b: Int) -> Int {
+    var res = a
+    for _ in 1..<b {
+        res = res * a
+    }
+    print(res)
+    return res
+}
+
+//let y = 10
+//let z = 20
+//power(firstArg: y, secondArg: z)
+//
+
+var firstString = "string"
+var secondString = "thing"
+
+func areTheStringsAnagrams(first: String, second: String) -> (Bool) {
+    return first.characters.sorted() == second.characters.sorted()
+}
+
+areTheStringsAnagrams(first: firstString, second: secondString)
+
+func numberSum(N: Int) -> (Int) {
+    var total = 0
+    let i = 0
+    for i in i..<N {
+        total += i
+    }
+    return total
+}
+
+numberSum(N: 5)
+numberSum(N: 10)
+
+func numberSumWithConditions(N: Int) -> (Int) {
+    var total = 0
+    let i = 0
+    
+        for i in i..<N {
+            if (i % 3 == 0) || (i % 5 == 0) {
+            total += i
+            }
+        }
+    return total
+}
+
+numberSumWithConditions(N: 5)
+numberSumWithConditions(N: 10)
+
+
+let n = 12
+let table = Array(0...n).map({"\(n) * \($0) = \(n * $0)"}).joined(separator: "\n")
+print("\(table)")
+
+// Take the numbers 0 through ten for an Array 
+// use the map function to convert each member of the Array into a string
+// $0 represents each value in turn.
+// The result is an array of strings
+// Join all the members of your `String` array with a newline character
+
+func multiplicationTable(multiplier: Int, counter: Int) -> () {
+    let table = Array(0...counter).map({"\(multiplier) * \($0) = \(multiplier * $0)"}).joined(separator: "\n")
+    return print("\(table)")
+}
+
+
+multiplicationTable(multiplier: 3, counter: 10)
+
+
+
+
